@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '3.2.13'
 
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'master'
 gem 'pg'
 gem 'slim'
 gem 'navigasmic'
