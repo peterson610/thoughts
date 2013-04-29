@@ -1,19 +1,13 @@
 class PostsController < ApplicationController
-  helper_method :posts
-
-  def index
-    @posts = posts.take(4)
-  end
-
-  def show
-    @post = posts.find do |post|
-      post.id == params[:id]
-    end
-  end
+  helper_method :posts, :post
 
   private
 
+  def post
+    @post ||= PostSearcher.get_post
+  end
+
   def posts
-    @posts ||= Post.order('id DESC').all
+    @posts ||= PostSearcher.latest_posts
   end
 end

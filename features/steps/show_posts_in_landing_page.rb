@@ -6,7 +6,6 @@ class Spinach::Features::ShowPostsInLandingPage < Spinach::FeatureSteps
   end
 
   step 'I visit the home page' do
-    binding.pry
     visit '/'
   end
 
