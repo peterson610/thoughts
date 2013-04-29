@@ -1,0 +1,13 @@
+nav#menu
+  .menu
+    .home-link
+      =link_to root_path do
+        span Thoughts
+    .navigation
+      =semantic_navigation :primary, id: 'navigation' do |n|
+        -n.item 'I am', root_path
+        -n.item 'I code', root_path
+        -n.item 'I play', root_path
+        -n.item 'I game', root_path
+        -n.item 'I write', root_path
+        -n.item 'I geek', root_path

@@ -102,6 +102,8 @@ GEM
     mime-types (1.23)
     multi_json (1.7.2)
     mustache (0.99.4)
+    navigasmic (1.0.4)
+      railties (~> 3.2)
     nokogiri (1.5.9)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -203,6 +205,7 @@ DEPENDENCIES
   guard-rspec
   guard-spinach
   jquery-rails
+  navigasmic
   pg
   pry
   pry-nav
