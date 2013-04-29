@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(:version => 20130427112715) do
     t.text     "teaser"
     t.text     "body"
     t.datetime "published_at"
-    t.string   "state"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end

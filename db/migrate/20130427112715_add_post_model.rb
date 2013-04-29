@@ -5,7 +5,6 @@ class AddPostModel < ActiveRecord::Migration
       t.text :teaser
       t.text :body
       t.datetime :published_at
-      t.string :state
 
       t.timestamps
     end

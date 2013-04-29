@@ -1,11 +1,12 @@
 class Spinach::Features::ShowPostsInLandingPage < Spinach::FeatureSteps
   step '3 posts exist' do
-    3.times do
-      Fabricate(:post)
-    end
+    Fabricate(:post)
+    Fabricate(:post)
+    Fabricate(:post)
   end
 
   step 'I visit the home page' do
+    binding.pry
     visit '/'
   end
 
@@ -16,9 +17,12 @@ class Spinach::Features::ShowPostsInLandingPage < Spinach::FeatureSteps
   end
 
   step '6 posts exist' do
-    6.times do
-      Fabricate(:post)
-    end
+    Fabricate(:post)
+    Fabricate(:post)
+    Fabricate(:post)
+    Fabricate(:post)
+    Fabricate(:post)
+    Fabricate(:post)
   end
 
   step 'I should see the last 4 posts' do

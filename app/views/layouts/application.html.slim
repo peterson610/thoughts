@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    /*link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,700italic,300,400,700' rel='stylesheet' type='text/css'*/
+    /*=render partial: 'meta'*/
+
+    /*= stylesheet_link_tag :application, media: 'all'*/
+    /*= javascript_include_tag :application*/
+    /*link href=posts_path(format: 'xml').html_safe rel="alternate" title="News Feed" type="application/atom+xml"*/
+    /*meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"*/
+    /*= csrf_meta_tags*/
+
+  body
+    /*=render partial: 'menu'*/
+    /*=yield(:header)*/
+    #content=yield
+    /*=render partial: 'footer'*/
+    /*javascript:*/
+    /*  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");*/
+    /*=render partial: 'analytics'*/

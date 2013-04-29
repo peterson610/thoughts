@@ -5,8 +5,7 @@ ruby '2.0.0'
 gem 'rails', '3.2.13'
 
 gem 'pg'
-gem 'fabrication'
-
+gem 'slim'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -24,6 +23,11 @@ group :development, :test do
   gem 'spinach-rails'
   gem 'pry'
   gem 'pry-nav'
+end
+
+group :test do
+  gem 'fabrication'
+  gem 'webmock'
 end
 
 gem 'jquery-rails'
