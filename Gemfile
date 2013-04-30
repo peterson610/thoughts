@@ -28,6 +28,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'launchy'
   gem 'fabrication'
   gem 'webmock'
 end

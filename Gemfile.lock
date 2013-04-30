@@ -128,6 +128,8 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    launchy (2.2.0)
+      addressable (~> 2.3)
     listen (1.0.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -257,6 +259,7 @@ DEPENDENCIES
   guard-rspec
   guard-spinach
   jquery-rails
+  launchy
   navigasmic
   pg
   pry
