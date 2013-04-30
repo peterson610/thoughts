@@ -1,8 +1,8 @@
-ActiveAdmin.register Post do
+ActiveAdmin.register InfoBlock do
   index do
     column :title
-    column :teaser
     column :body
+    column :kind
 
     default_actions
   end
