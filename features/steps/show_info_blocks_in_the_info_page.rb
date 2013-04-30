@@ -18,27 +18,27 @@ class Spinach::Features::ShowInfoBlocksInTheInfoPage < Spinach::FeatureSteps
 
   step 'I should see them in the right place' do
     within '#music' do
-      page.should have_css('.music_block')
+      page.should have_css('.music-block')
     end
 
     within '#gaming' do
-      page.should have_css('.gaming_block')
+      page.should have_css('.gaming-block')
     end
 
     within '#code' do
-      page.should have_css('.code_block')
+      page.should have_css('.code-block')
     end
 
     within '#writing' do
-      page.should have_css('.writing_block')
+      page.should have_css('.writing-block')
     end
 
     within '#myself' do
-      page.should have_css('.myself_block')
+      page.should have_css('.myself-block')
     end
 
     within '#geek' do
-      page.should have_css('.geek_block')
+      page.should have_css('.geek-block')
     end
   end
 end
