@@ -28,6 +28,7 @@ Thoughts::Application.routes.draw do
   #     end
   #   end
   resources :posts
+  resources :info_blocks
 
   # Sample resource route with sub-resources:
   #   resources :products do

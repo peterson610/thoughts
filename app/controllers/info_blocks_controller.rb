@@ -1,0 +1,3 @@
+class InfoBlocksController < ApplicationController
+
+end
