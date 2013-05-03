@@ -1,18 +1,27 @@
-#myself
-  h3 I am
-  =render blocks('myself')
 #code
   h3 I code
+  .category_description=t('.icode', href: link_to(t('.icode_href'), 'http://www.codegram.com')).html_safe
   =render blocks('code')
+
 #music
   h3 I play
+  .category_description=t('.iplay')
   =render blocks('music')
+
 #gaming
   h3 I game
+  .category_description=t('.igame')
   =render blocks('gaming')
+
 #writing
   h3 I write
+  .category_description=t('.iwrite')
   =render blocks('writing')
+
 #geek
   h3 I geek
+  .category_description=t('.igeek')
   =render blocks('geek')
+#myself
+  h3 Therefore, I am
+  .category_description=t('.iam')
