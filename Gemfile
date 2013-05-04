@@ -12,8 +12,10 @@ gem 'navigasmic'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem "compass-rails",    github: "milgner/compass-rails", ref: "1749c06f15dc4b058427e7969810457213647fb8"
+  gem 'susy'
+  gem 'uglifier'
+  gem 'font-awesome-sass-rails'
 end
 
 group :development, :test do

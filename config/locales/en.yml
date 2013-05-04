@@ -5,7 +5,7 @@ en:
   hello: "Hello world"
   info_blocks:
     about:
-      iam: "All these makes me who I am. I code every day, I play games whenever I am not geeking stuff around or playing any of my bass guitars, and in the most unexpected moment I even may find the time to write a little something. "
+      iam: "All these make me who I am. I code every day, I play games whenever I am not geeking stuff around or playing any of my bass guitars, and in the most unexpected moment I even may find the time to write a little something. "
       icode: "I am full time junior developer at %{href}."
       icode_href: Codegram
       igame: "I still remember playing Prince of Persia and The Fate of Atlantis back in the 90's in a DOS computer, I was 6. Gaming has been a part of me all my life."
