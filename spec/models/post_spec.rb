@@ -23,5 +23,10 @@ describe Post do
       post.body = nil
       post.should_not be_valid
     end
+
+    it 'is not valid without a kind' do
+      post.kind = nil
+      post.should_not be_valid
+    end
   end
 end

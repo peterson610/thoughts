@@ -1,5 +1,2 @@
 article class="#{info_block.kind}-block"
-  h4=info_block.title
-  =info_block.body
-aside
-  =info_block.picture
+  h4=link_to info_block.title, post_path(info_block)

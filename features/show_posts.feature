@@ -12,3 +12,9 @@ Feature: Show posts in landing page
     Given 6 posts exist
     When I visit the home page
     Then I should see the last 4 posts
+
+  Scenario: About section
+    Given Posts from different kinds exist
+    When I visit the info page
+    Then I should see the posts
+    And I should see them in the right place
