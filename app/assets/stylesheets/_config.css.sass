@@ -1,7 +1,33 @@
+$multiplier: 1.2
+
+$total-columns: 12
+$column-width: 4.5em
+$gutter-width: 2em
+$grid-padding: $gutter-width
+$border-box-sizing: true
+
 // Fonts
 $title-font-family: 'Oleo Script Swash Caps', cursive
 
 // Colors
-$blueish-color: #678A8A
-$sand-color: #E6D2AC
-$pinkish-color: #E6ACAC
+$blueish-color: #666
+$sand-color: lighten($blueish-color, 20)
+$pinkish-color: lighten($sand-color, 20)
+
+// Mixins config
+$default-text-shadow-color: black
+$default-text-shadow-blur: 0
+$default-text-shadow-v-offset: 1px
+
+// Susy columns config
+$total-columns: 12
+$mobile-columns: 4
+$tablet-columns: 8
+$desktop-columns: $total-columns
+
+// Breakpoints
+$small-mobile-breakpoint: 0px $mobile-columns 320px
+$mobile-breakpoint: 0px $mobile-columns 480px
+$tablet-breakpoint: 481px $tablet-columns 799px
+$desktop-breakpoint: 800px $desktop-columns
+$up-to-desktop-breakpoint: 0px $desktop-columns 1024px

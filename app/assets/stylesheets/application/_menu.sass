@@ -1,0 +1,67 @@
+@import compass/css3/inline-block
+@import "compass/css3/text-shadow"
+
+#menu
+  font-family: $title-font-family
+  background-color: $blueish-color
+  line-height: rhythm(2)
+  +single-text-shadow
+
+  &, a
+    color: $pinkish-color
+    text-decoration: none
+
+  .home-link
+    font-size: 3em
+    +span-columns(4)
+    vertical-align: middle
+    a
+      +inline-block
+      padding-left: rhythm(1)
+      white-space: nowrap
+  .menu
+    +container
+
+  .navigation
+    position: absolute
+    +prefix(1)
+    +leader(0.4)
+    +span-columns($desktop-columns - 6)
+    a
+      font-size: 1.5em
+      float: left
+      margin-left: 15px
+
+      &:hover
+        color: $sand-color
+
+  +at-breakpoint($tablet-breakpoint)
+    .home-link
+      +span-columns(2)
+      font-size: 2.5em
+      a
+        padding-left: rhythm(0.5)
+    .navigation
+      position: absolute
+      +leader(0.6)
+      +span-columns(($tablet-columns - 3) omega)
+      a
+        font-size: 1.3em
+        line-height: rhythm(1)
+
+  +at-breakpoint($mobile-breakpoint)
+    .home-link
+      +span-columns(2)
+      font-size: 2em
+      a
+        padding-left: rhythm(2.3)
+    .navigation
+      +span-columns($mobile-columns)
+      padding-left: rhythm(0)
+      a
+        font-size: 1.2em
+        line-height: rhythm(1)
+
+  +at-breakpoint($up-to-desktop-breakpoint)
+    .navigation
+      position: relative
