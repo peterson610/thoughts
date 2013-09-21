@@ -1,5 +1,5 @@
 #header-wrapper
-  height: 50px
+  height: 54px
   background-color: $header-background
   border-bottom: 3px solid $header-border
   color: white
@@ -11,6 +11,7 @@
     .title
       h1
         +adjust-font-size-to(34px)
+        line-height: 56px
       margin-left: 30px
       float: left
       width: 50%
@@ -18,6 +19,9 @@
       +adjust-font-size-to(22px)
       color: $header-border
       float: right
+      a
+        color: $header-border
+        text-decoration: none
       i
         padding: 17px
         border-left: 1px solid $header-border
