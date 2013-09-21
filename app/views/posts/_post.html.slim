@@ -1,4 +1,7 @@
 article.post id="post-#{post.id}"
-  h3=post.title
-  h4.teaser=post.teaser
-  .body=post.body
+  .header
+    h3=post.title
+  .post-content
+    .date=post.created_at.strftime("Posted on %F")
+    h4.teaser=post.teaser
+    .body=post.body
