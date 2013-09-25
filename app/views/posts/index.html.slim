@@ -1,6 +1,10 @@
 -@title = 'Blog'
 -@description = 'Blah'
-h1 Fucking typo is wrong and needs revision
 
 section#blog
-  =render posts
+  h1 My recent thoughts
+  table#posts
+    -posts.each do |post|
+      tr
+        td.date=post.created_at.strftime("%b-%d")
+        td.post-title=link_to post.title, post_path(post)

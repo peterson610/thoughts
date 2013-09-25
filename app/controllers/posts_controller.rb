@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   private
 
   def post
-    @post ||= PostSearcher.get_post
+    @post ||= PostSearcher.get_post(params[:id])
   end
 
   def posts

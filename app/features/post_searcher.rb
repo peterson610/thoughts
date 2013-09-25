@@ -2,10 +2,10 @@ class PostSearcher
   include Enumerable
 
   def self.latest_posts
-    Post.order('id DESC').take(4)
+    Post.order('id DESC')
   end
 
-  def self.get_post
-    Post.find(params[:id])
+  def self.get_post(id)
+    Post.find(id)
   end
 end

@@ -1,12 +1,5 @@
 nav#menu
   .menu
-    .home-link
-      =link_to root_path do
-        span Thoughts
     .navigation
       =semantic_navigation :primary, id: 'navigation' do |n|
-        -n.item 'I code,', info_blocks_path(anchor: '#code')
-        -n.item 'I play,', info_blocks_path(anchor: '#music')
-        -n.item 'I game,', info_blocks_path(anchor: '#gaming')
-        -n.item 'I write,', info_blocks_path(anchor: '#writing')
-        -n.item 'I geek.', info_blocks_path(anchor: '#geek')
+        -n.item 'Index', root_path if action_name == 'show'
